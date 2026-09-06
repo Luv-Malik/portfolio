@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth" style="background-color: #020617; color: #f8fafc;">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luv Malik | Software Engineer & CS Undergraduate</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- React & Babel -->
     <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         body {
@@ -82,4 +85,201 @@
                     isLive: false
                 }
             ],
-            achievements:
+            achievements: [
+                "Achieved 97.61 Percentile in JEE Mains & Qualified for JEE Advanced",
+                "Maintained top academic standing with a 9.0 CGPA in B.Tech First Year",
+                "Recognized for leadership as School Prefect and Class 12 Academic Topper"
+            ]
+        };
+
+        // --- NAVBAR COMPONENT ---
+        function Navbar() {
+            const [scrolled, setScrolled] = useState(false);
+            useEffect(() => {
+                const handleScroll = () => setScrolled(window.scrollY > 20);
+                window.addEventListener('scroll', handleScroll);
+                return () => window.removeEventListener('scroll', handleScroll);
+            }, []);
+            return (
+                <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80 py-4' : 'bg-transparent py-6'}`}>
+                    <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
+                        <a href="#" className="text-xl font-bold tracking-tight text-white hover:text-indigo-400 transition-colors">
+                            {PERSONAL_DATA.name}
+                        </a>
+                        <div className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                            <a href="#about" className="hover:text-indigo-400 transition-colors">About</a>
+                            <a href="#skills" className="hover:text-indigo-400 transition-colors">Skills</a>
+                            <a href="#certifications" className="hover:text-indigo-400 transition-colors">Certifications</a>
+                            <a href="#projects" className="hover:text-indigo-400 transition-colors">Projects</a>
+                            <a href={`mailto:${PERSONAL_DATA.email}`} className="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg transition-colors font-semibold">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+            );
+        }
+
+        // --- HERO SECTION ---
+        function Hero() {
+            return (
+                <section className="pt-36 pb-20 md:pt-48 md:pb-32 px-6 max-w-6xl mx-auto relative">
+                    <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none"></div>
+                    <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-indigo-400 mb-6">
+                        <span className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>B.Tech Computer Science • Graduating 2029
+                    </div>
+                    <div className="mb-8">
+                        <img 
+                            src={PERSONAL_DATA.avatar} 
+                            alt={PERSONAL_DATA.name} 
+                            onError={(e) => { e.target.onerror = null; e.target.src = "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&auto=format&fit=crop&q=80"; }} 
+                            className="w-32 h-32 md:w-40 md:h-40 rounded-full border-2 border-indigo-500/80 object-cover shadow-2xl shadow-indigo-500/25 ring-4 ring-indigo-500/10 hover:scale-105 transition-transform duration-300" 
+                        />
+                    </div>
+                    <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                        Hi, I'm <span className="bg-gradient-to-r from-indigo-400 via-indigo-300 to-cyan-400 bg-clip-text text-transparent">{PERSONAL_DATA.name}</span>.
+                    </h1>
+                    <p className="text-lg md:text-xl text-slate-400 max-w-2xl mb-8 leading-relaxed">{PERSONAL_DATA.bio}</p>
+                    <div className="flex flex-wrap items-center gap-4">
+                        <a href="#projects" className="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-medium rounded-xl shadow-lg shadow-indigo-600/25 transition-all flex items-center gap-2">Explore Projects <i data-lucide="arrow-right" className="w-4 h-4"></i></a>
+                        <a href={PERSONAL_DATA.linkedin} target="_blank" rel="noreferrer" className="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-medium rounded-xl transition-all flex items-center gap-2"><i data-lucide="linkedin" className="w-4 h-4 text-indigo-400"></i> LinkedIn</a>
+                        <a href={PERSONAL_DATA.github} target="_blank" rel="noreferrer" className="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-medium rounded-xl transition-all flex items-center gap-2"><i data-lucide="github" className="w-4 h-4 text-indigo-400"></i> GitHub</a>
+                    </div>
+                </section>
+            );
+        }
+
+        // --- ABOUT / EDUCATION ---
+        function About() {
+            return (
+                <section id="about" className="py-20 px-6 max-w-6xl mx-auto border-t border-slate-900">
+                    <h2 className="text-2xl font-bold text-white mb-8 flex items-center gap-2"><i data-lucide="user" className="text-indigo-400 w-6 h-6"></i> Education & Academic Performance</h2>
+                    <div className="grid md:grid-cols-2 gap-8">
+                        <div className="bg-slate-900/50 border border-slate-800/80 p-6 rounded-2xl">
+                            <h3 className="text-lg font-semibold text-white mb-3">Academic Background</h3>
+                            <div className="border-l-2 border-indigo-500/80 pl-4 py-1 mb-6">
+                                <h4 className="font-semibold text-slate-200">{PERSONAL_DATA.education.degree}</h4>
+                                <p className="text-xs text-indigo-400 font-mono mt-1">{PERSONAL_DATA.education.graduation}</p>
+                            </div>
+                            <div className="grid grid-cols-2 gap-4">
+                                <div className="p-4 bg-slate-950 rounded-xl border border-slate-800"><div className="text-xs text-slate-500 font-mono mb-1">ACADEMIC CGPA</div><div className="text-xl font-bold text-indigo-400">{PERSONAL_DATA.education.cgpa}</div></div>
+                                <div className="p-4 bg-slate-950 rounded-xl border border-slate-800"><div className="text-xs text-slate-500 font-mono mb-1">JEE MAINS</div><div className="text-xl font-bold text-cyan-400">{PERSONAL_DATA.education.jee}</div></div>
+                            </div>
+                        </div>
+                        <div className="bg-slate-900/50 border border-slate-800/80 p-6 rounded-2xl">
+                            <h3 className="text-lg font-semibold text-white mb-4">Key Academic Highlights</h3>
+                            <div className="space-y-4">
+                                {PERSONAL_DATA.achievements.map((item, idx) => (
+                                    <div key={idx} className="flex items-start gap-3"><div className="p-1 bg-indigo-600/10 border border-indigo-500/20 rounded-md text-indigo-400 mt-0.5"><i data-lucide="check" className="w-4 h-4"></i></div><p className="text-slate-300 text-sm leading-relaxed">{item}</p></div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            );
+        }
+
+        // --- SKILLS ---
+        function Skills() {
+            return (
+                <section id="skills" className="py-20 px-6 max-w-6xl mx-auto border-t border-slate-900">
+                    <h2 className="text-2xl font-bold text-white mb-8 flex items-center gap-2"><i data-lucide="code-2" className="text-indigo-400 w-6 h-6"></i> Technical Stack & CS Core</h2>
+                    <div className="grid sm:grid-cols-2 gap-6">
+                        {PERSONAL_DATA.skills.map((group, idx) => (
+                            <div key={idx} className="bg-slate-900/50 border border-slate-800/80 p-6 rounded-2xl hover:border-slate-700 transition-all">
+                                <h3 className="text-sm font-semibold text-indigo-400 font-mono mb-4 uppercase tracking-wider">{group.category}</h3>
+                                <div className="flex flex-wrap gap-2">{group.items.map((item, i) => (<span key={i} className="text-xs font-mono px-3 py-1.5 bg-slate-800/80 border border-slate-700/60 text-slate-200 rounded-lg">{item}</span>))}</div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            );
+        }
+
+        // --- CERTIFICATIONS ---
+        function Certifications() {
+            return (
+                <section id="certifications" className="py-20 px-6 max-w-6xl mx-auto border-t border-slate-900">
+                    <h2 className="text-2xl font-bold text-white mb-8 flex items-center gap-2"><i data-lucide="award" className="text-indigo-400 w-6 h-6"></i> Professional Certifications</h2>
+                    <div className="grid md:grid-cols-3 gap-6">
+                        {PERSONAL_DATA.certifications.map((cert, idx) => (
+                            <div key={idx} className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 hover:border-slate-700 transition-all">
+                                <div className="p-3 bg-indigo-600/10 border border-indigo-500/20 rounded-xl text-indigo-400 w-fit mb-4"><i data-lucide={cert.icon} className="w-6 h-6"></i></div>
+                                <h3 className="text-base font-bold text-white mb-1">{cert.title}</h3>
+                                <p className="text-xs font-mono text-indigo-400 mb-3">{cert.issuer}</p>
+                                <span className="inline-block text-[11px] font-mono px-2.5 py-1 bg-slate-800 text-slate-300 border border-slate-700 rounded-md">{cert.status}</span>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            );
+        }
+
+        // --- PROJECTS ---
+        function Projects() {
+            return (
+                <section id="projects" className="py-20 px-6 max-w-6xl mx-auto border-t border-slate-900">
+                    <div className="flex flex-col md:flex-row md:items-center justify-between mb-8 gap-4">
+                        <div>
+                            <h2 className="text-2xl font-bold text-white flex items-center gap-2"><i data-lucide="folder-git-2" className="text-indigo-400 w-6 h-6"></i> Technical Projects</h2>
+                            <p className="text-slate-400 text-sm mt-1">Live applications and software architectures in active development.</p>
+                        </div>
+                        <span className="text-xs font-mono px-3 py-1 bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 rounded-full w-fit">Featured Projects</span>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-6">
+                        {PERSONAL_DATA.plannedProjects.map((project, idx) => (
+                            <div key={idx} className="bg-slate-900/40 border border-slate-800/80 rounded-2xl p-6 flex flex-col justify-between hover:border-slate-700 hover:bg-slate-900/60 transition-all">
+                                <div>
+                                    <div className="flex items-center justify-between mb-2">
+                                        <span className="text-[10px] font-mono uppercase tracking-widest text-indigo-400 block">{project.category}</span>
+                                        {project.isLive && (
+                                            <span className="inline-flex items-center gap-1.5 text-[10px] font-mono px-2.5 py-0.5 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 rounded-full">
+                                                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Live Now
+                                            </span>
+                                        )}
+                                    </div>
+                                    <h3 className="text-lg font-bold text-white mb-2">{project.title}</h3>
+                                    <p className="text-slate-400 text-sm leading-relaxed mb-6">{project.description}</p>
+                                </div>
+                                <div>
+                                    <div className="flex flex-wrap gap-2 mb-6">{project.tech.map((t, i) => (<span key={i} className="text-[11px] font-mono px-2.5 py-1 bg-slate-800/80 border border-slate-700/50 text-indigo-300 rounded-md">{t}</span>))}</div>
+                                    {project.isLive && (
+                                        <a href={project.liveUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-xs font-semibold px-4 py-2 bg-indigo-600/20 hover:bg-indigo-600/30 text-indigo-300 border border-indigo-500/30 rounded-lg transition-colors">
+                                            Visit Live Project <i data-lucide="external-link" className="w-3.5 h-3.5"></i>
+                                        </a>
+                                    )}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            );
+        }
+
+        // --- FOOTER ---
+        function Footer() {
+            return (
+                <footer className="py-12 border-t border-slate-900 text-center text-slate-500 text-xs font-mono">
+                    <p>© {new Date().getFullYear()} {PERSONAL_DATA.name}. Built with React & Tailwind CSS.</p>
+                </footer>
+            );
+        }
+
+        // --- MAIN APP ---
+        function App() {
+            useEffect(() => { if (window.lucide) { window.lucide.createIcons(); } }, []);
+            return (
+                <div className="min-h-screen bg-slate-950">
+                    <Navbar />
+                    <Hero />
+                    <About />
+                    <Skills />
+                    <Certifications />
+                    <Projects />
+                    <Footer />
+                </div>
+            );
+        }
+
+        ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+    </script>
+</body>
+</html>
