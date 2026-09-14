@@ -60,4 +60,9 @@ cat << 'EOF' > README.md
 Portfolio/
 ├── index.html         # Main Single-Page React Application (Tailwind + Lucide Icons)
 ├── profile.jpg        # Profile Avatar & Assets
-└── README.md          # Personal Portfolio Documentation
+└── README.md          # Personal Portfolio Documentation📬 Connect With Me
+ LinkedIn: linkedin.com/in/luv-malik-188018383
+ GitHub: @Luv-Malik
+ Email: Luvmalik8684@icloud.com
+<p align="center"><i>Designed & Developed by Luv Malik</i></p>
+EOF
