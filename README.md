@@ -1,8 +1,7 @@
-
 # 🚀 Luv Malik — Personal Portfolio Portal
 
 <p align="left">
-  <a href="https://luv-malik.github.io/"><img src="https://img.shields.io/badge/Live_Portfolio-Visit_Site-6366f1?style=for-the-badge&logo=react&logoColor=white" alt="Live Portfolio"></a>
+  <a href="https://luv-malik.github.io/Portfolio/"><img src="https://img.shields.io/badge/Live_Portfolio-Visit_Site-6366f1?style=for-the-badge&logo=react&logoColor=white" alt="Live Portfolio"></a>
   <img src="https://img.shields.io/badge/Degree-B.Tech_CSE-06b6d4?style=for-the-badge" alt="BTech CSE">
   <img src="https://img.shields.io/badge/JEE_Mains-97.61_%25ile-emerald?style=for-the-badge" alt="JEE Percentile">
 </p>
@@ -60,8 +59,8 @@
 Portfolio/
 ├── index.html         # Main Single-Page React Application (Tailwind + Lucide Icons)
 ├── profile.jpg        # Profile Avatar & Assets
-└── README.md          # Personal Portfolio Documentation📬 Connect With Me
- LinkedIn: linkedin.com/in/luv-malik-188018383
- GitHub: @Luv-Malik
- Email: Luvmalik8684@icloud.com
+└── README.md          # Personal Portfolio Documentation
+
+
+
 
