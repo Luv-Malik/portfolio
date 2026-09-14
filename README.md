@@ -1,4 +1,4 @@
-cat << 'EOF' > README.md
+
 # 🚀 Luv Malik — Personal Portfolio Portal
 
 <p align="left">
@@ -64,5 +64,4 @@ Portfolio/
  LinkedIn: linkedin.com/in/luv-malik-188018383
  GitHub: @Luv-Malik
  Email: Luvmalik8684@icloud.com
-<p align="center"><i>Designed & Developed by Luv Malik</i></p>
-EOF
+
