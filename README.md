@@ -1,43 +1,43 @@
-# Luv Malik — Developer Portfolio
+# Luv Malik — Software Developer Portfolio
 
-A personal portfolio for my Computer Science & Engineering journey, projects, and technical interests.
+A responsive portfolio focused on software projects, practical engineering, and thoughtful interface design.
 
-**Live site:** https://luv-malik.github.io/portfolio/  
+**Live portfolio:** https://luv-malik.github.io/portfolio/  
 **GitHub:** https://github.com/Luv-Malik  
 **LinkedIn:** https://www.linkedin.com/in/luv-malik-188018383
 
 ## About
 
-I'm a CSE undergraduate (expected graduation: 2029) learning by building useful software. My interests include web development, backend systems, data structures and algorithms, and practical product engineering.
+I'm a Computer Science undergraduate learning by building useful software. My interests include web development, backend systems, clean APIs, and the engineering decisions that make products reliable and easy to use.
 
-## Highlights
+## Featured projects
 
-- **JEE Main:** 97.61 percentile
-- **First-year CGPA:** 9.0
-- **Expected graduation:** 2029
+### [MY Toppers Hub](https://luv-malik.github.io/MY_Toppers_Hub/) — Live website
+A student resource portal with subject navigation, searchable notes, and unit-based resources.
 
-## Featured work
+- **Live site:** https://luv-malik.github.io/MY_Toppers_Hub/
+- **Source code:** https://github.com/Luv-Malik/MY_Toppers_Hub
+- **Stack:** HTML, CSS, JavaScript, GitHub Pages
 
-### [MY Toppers Hub](https://luv-malik.github.io/MY_Toppers_Hub/) — Live
-A study-resource portal with subject navigation, searchable notes, and unit-based resources.
+### [CivicPulse](https://github.com/Luv-Malik/Civic-Pulse) — Development build
+A civic-issue reporting MVP that groups potentially similar reports using geographic distance and text similarity, then calculates an explainable priority score for human review.
 
-**Stack:** HTML, CSS, JavaScript, GitHub Pages
+- **Repository / source:** https://github.com/Luv-Malik/Civic-Pulse
+- **Stack:** Java 21, Spring Boot, React, PostgreSQL, Leaflet / OpenStreetMap
+- **Demo status:** No separate hosted public demo is currently listed; use the repository for the implementation.
 
-### [CivicPulse](https://github.com/Luv-Malik/Civic-Pulse) — In development
-A civic-issue reporting MVP exploring geographic and text-based duplicate grouping, plus explainable prioritization for human review.
+### [Developer Portfolio](https://github.com/Luv-Malik/portfolio)
+This portfolio itself, built with a custom responsive design, command palette, keyboard navigation, and reduced-motion support.
 
-**Stack:** Java, Spring Boot, React, PostgreSQL
-
-### [Leet-Code](https://github.com/Luv-Malik/Leet-Code) — Practice
-A growing collection of coding-problem solutions and algorithm practice.
-
-**Stack:** Java, data structures, algorithms
+- **Live site:** https://luv-malik.github.io/portfolio/
+- **Source code:** https://github.com/Luv-Malik/portfolio
+- **Stack:** HTML, CSS, JavaScript
 
 ## Skills
 
 - **Languages:** Java, C++, Python, JavaScript, C, SQL, HTML, CSS
-- **Web and backend:** React, Node.js, Express, Spring Boot, REST APIs
-- **CS fundamentals:** Data structures and algorithms, OOP, DBMS, operating systems, computer networks
+- **Web & backend:** React, Node.js, Express, Spring Boot, REST APIs
+- **CS foundations:** Data structures and algorithms, OOP, DBMS, operating systems, computer networks
 - **Tools:** Git, GitHub, Postman, VS Code, Linux CLI, PostgreSQL
 
 ## Learning & certifications
@@ -48,17 +48,15 @@ A growing collection of coding-problem solutions and algorithm practice.
 
 ## Design & implementation
 
-The site uses a developer-inspired visual language: charcoal surfaces, lime accents, a terminal-style hero panel, responsive layouts, and a keyboard-accessible command palette.
+The site uses a warm paper background with ink-navy typography, cobalt accents, and coral details. A terminal-inspired hero keeps the developer identity without relying on the usual black-and-neon-green palette.
 
-- **No build step required:** plain HTML, CSS, and JavaScript
-- **Responsive navigation** for mobile and desktop
-- **Command palette:** press `⌘K` on macOS or `Ctrl+K` on Windows/Linux
-- **Accessibility:** skip link, visible keyboard focus, semantic sections, and reduced-motion support
-- **Deployment:** GitHub Pages
+- No build step required: plain HTML, CSS, and JavaScript
+- Responsive navigation for mobile and desktop
+- Command palette: press `⌘K` on macOS or `Ctrl+K` on Windows/Linux
+- Accessibility: skip link, visible keyboard focus, semantic sections, and reduced-motion support
+- Deployment: GitHub Pages
 
 ## Run locally
-
-Clone the repository and open `index.html` in a browser:
 
 ```bash
 git clone https://github.com/Luv-Malik/portfolio.git
@@ -66,8 +64,8 @@ cd portfolio
 open index.html
 ```
 
-On systems without the `open` command, simply open `index.html` from your file manager.
+On systems without the `open` command, open `index.html` from your file manager.
 
 ---
 
-Built with care by Luv Malik.
+Built by Luv Malik.
