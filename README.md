@@ -1,66 +1,73 @@
-# 🚀 Luv Malik — Personal Portfolio 
+# Luv Malik — Developer Portfolio
 
-<p align="left">
-  <a href="https://luv-malik.github.io/portfolio/"><img src="https://img.shields.io/badge/Live_Portfolio-Visit_Site-6366f1?style=for-the-badge&logo=react&logoColor=white" alt="Live Portfolio"></a>
-  <img src="https://img.shields.io/badge/Degree-B.Tech_CSE-06b6d4?style=for-the-badge" alt="BTech CSE">
-  <img src="https://img.shields.io/badge/JEE_Mains-97.61_%25ile-emerald?style=for-the-badge" alt="JEE Percentile">
-</p>
+A personal portfolio for my Computer Science & Engineering journey, projects, and technical interests.
 
-> **Computer Science & Engineering Undergraduate** focused on Full-Stack Development, core Data Structures & Algorithms, scalable web systems, and AI integration.
+**Live site:** https://luv-malik.github.io/portfolio/  
+**GitHub:** https://github.com/Luv-Malik  
+**LinkedIn:** https://www.linkedin.com/in/luv-malik-188018383
+
+## About
+
+I'm a CSE undergraduate (expected graduation: 2029) learning by building useful software. My interests include web development, backend systems, data structures and algorithms, and practical product engineering.
+
+## Highlights
+
+- **JEE Main:** 97.61 percentile
+- **First-year CGPA:** 9.0
+- **Expected graduation:** 2029
+
+## Featured work
+
+### [MY Toppers Hub](https://luv-malik.github.io/MY_Toppers_Hub/) — Live
+A study-resource portal with subject navigation, searchable notes, and unit-based resources.
+
+**Stack:** HTML, CSS, JavaScript, GitHub Pages
+
+### [CivicPulse](https://github.com/Luv-Malik/Civic-Pulse) — In development
+A civic-issue reporting MVP exploring geographic and text-based duplicate grouping, plus explainable prioritization for human review.
+
+**Stack:** Java, Spring Boot, React, PostgreSQL
+
+### [Leet-Code](https://github.com/Luv-Malik/Leet-Code) — Practice
+A growing collection of coding-problem solutions and algorithm practice.
+
+**Stack:** Java, data structures, algorithms
+
+## Skills
+
+- **Languages:** Java, C++, Python, JavaScript, C, SQL, HTML, CSS
+- **Web and backend:** React, Node.js, Express, Spring Boot, REST APIs
+- **CS fundamentals:** Data structures and algorithms, OOP, DBMS, operating systems, computer networks
+- **Tools:** Git, GitHub, Postman, VS Code, Linux CLI, PostgreSQL
+
+## Learning & certifications
+
+- Python Programming — TuteDude (currently pursuing)
+- AI Tools & Productivity Workshop — be10x (completed)
+- Artificial Intelligence Certification — BEEP (completed)
+
+## Design & implementation
+
+The site uses a developer-inspired visual language: charcoal surfaces, lime accents, a terminal-style hero panel, responsive layouts, and a keyboard-accessible command palette.
+
+- **No build step required:** plain HTML, CSS, and JavaScript
+- **Responsive navigation** for mobile and desktop
+- **Command palette:** press `⌘K` on macOS or `Ctrl+K` on Windows/Linux
+- **Accessibility:** skip link, visible keyboard focus, semantic sections, and reduced-motion support
+- **Deployment:** GitHub Pages
+
+## Run locally
+
+Clone the repository and open `index.html` in a browser:
+
+```bash
+git clone https://github.com/Luv-Malik/portfolio.git
+cd portfolio
+open index.html
+```
+
+On systems without the `open` command, simply open `index.html` from your file manager.
 
 ---
 
-## ⚡ Highlights & Academic Standing
-
-* **Academic CGPA:** `9.0 CGPA` (B.Tech 1st Year)
-* **Competitive Entrance:** `97.61 Percentile` in JEE Mains (Qualified for JEE Advanced)
-* **Expected Graduation:** `2029`
-
----
-
-## 🛠️ Technical Stack
-
-| Category | Technologies & Tools |
-| :--- | :--- |
-| **Languages** | `C++`, `Python`, `JavaScript (ES6+)`, `C`, `SQL`, `HTML5/CSS3` |
-| **CS Fundamentals** | Data Structures & Algorithms, DBMS, Operating Systems, OOP, Computer Networks |
-| **Web Development** | React.js, Node.js, Express.js, RESTful APIs, Tailwind CSS |
-| **Dev Tools & AI** | Git, GitHub, Linux CLI, Postman, VS Code, Prompt Engineering |
-
----
-
-## 💻 Featured Projects
-
-### 🌐 [MY Toppers Hub (Study Resources Portal)](https://luv-malik.github.io/MY_Toppers_Hub/) *(Live)*
-* **Description:** Academic study material & notes portal built for CSE students featuring quick subject navigation, unit-wise PDF access, and dynamic instant search.
-* **Tech Stack:** `HTML5`, `Modern CSS3`, `Vanilla JS`, `GitHub Pages`
-
-### 🤖 AI-Powered Smart Code Reviewer *(In Development)*
-* **Description:** Full-stack web application leveraging modern AI models to analyze source code, detect security vulnerabilities, and suggest optimizations.
-* **Tech Stack:** `Python`, `React`, `Node.js`, `OpenAI API`, `Tailwind CSS`
-
-### 📊 Algorithmic Complexity & Graph Visualizer *(In Development)*
-* **Description:** Interactive visualization platform demonstrating pathfinding & sorting algorithms with step-by-step state changes and time-complexity metrics.
-* **Tech Stack:** `C++`, `JavaScript`, `React`, `Data Structures`
-
----
-
-## 📜 Certifications
-
-* 🏆 **Artificial Intelligence Certification** — *BEEP* (Completed)
-* ⚡ **AI Tools & Productivity Workshop** — *be10x* (Completed)
-* 🐍 **Python Programming Certification** — *TuteDude* (Pursuing)
-
----
-
-## 📂 Repository Structure
-
-```text
-Portfolio/
-├── index.html         # Main Single-Page React Application (Tailwind + Lucide Icons)
-├── profile.jpg        # Profile Avatar & Assets
-└── README.md          # Personal Portfolio Documentation
-
-
-
-
+Built with care by Luv Malik.
